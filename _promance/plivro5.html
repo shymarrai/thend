@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "utf-8">
+	<link rel="icon" href="./_imagens/thend.png">
+	<link rel="stylesheet" href="../_estilos/estiloindex.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<title> THEND - Acervo -  Muito Amor, Por Favor – ROMANCE</title>
+	<style>
+		div.valor{
+			margin-top: -50px;
+			padding-bottom: -90px;
+			height: 108px;
+		
+		}
+	</style>
+	<script>
+     // Cria a função de cálculo do total da compra
+            function calculaTotal(){
+                        // Criação das variáveis que irão controlar o script
+var qtdComprar, total, precoLivro;
+                        // Atribui a qtdComprar, a quantidade de livros que o usuário deseja comprar
+qtdComprar = document.calcula.qtd.value;
+                        // Faz a conversão da string para um número inteiro
+qtdComprar = parseInt(qtdComprar);
+                        // Atribui o preço do livro à variável precoLivro
+precoLivro = 17.77;
+                        // Cálculo do total que será comprado
+total = qtdComprar * precoLivro;
+                        // Define 2 casas decimais para o valor armazenado na variável total
+total =  total.toFixed(2);
+
+                        // Atribui ao campo totalCompra o valor armazenado na variável total já formatado
+document.calcula.totalCompra.value = "R$ " + total;
+}
+</script>
+	</head>
+	
+<body>
+<div id="interface">
+<h1 class="titulo"><a href='../index.html'> TH<span>E</span>ND </a> </h1>
+<header id="cabecalho">
+
+<nav id="menu">
+
+<ul id='box'>
+	<li class='m' id='acer'><a href="../acervo.html"> Acervo </a>
+		<ul id='sub'
+		<br>
+		<li id='r'><a href="../_paginas/romance.html" >Romance</a></li><br>
+		<li id='f'><a href="../_paginas/ficcao.html" >Ficção</a></li><br>
+		<li id='h'><a href="../_paginas/hq.html" >HQ'S</a></li><br>
+		<li id='c'><a href="../_paginas/comedia.html" >Comédia</a></li><br>
+		<li id='d'><a href="../_paginas/drama.html" >Drama</a></li><br>
+		</ul>
+	</li>
+	<li class='m'><a href="../lancamentos.html"> !Nerd</a></li>
+	 
+	<li class='m' id='contat'><a href="../contato.html"> Contate </a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+<section id="meio">
+
+
+<div id="conteudoprod">
+<h1 class='roma'>Muito Amor, Por Favor – ROMANCE </h1>
+<img class='poster' src="../_imagens/rlivro5.jpg">
+<br>
+<span id="livro"><p>Este livro reúne textos que mostram o amor do ponto de vista de quatro jovens que escrevem sobre relacionamentos legítimos e atuais, que souberam se reinventar. Sem medo de expressar seus sentimentos, deixam para trás estereótipos já obsoletos – como o controlador machista ou o piegas choroso – e falam sobre viver a dois e sobre a natureza das relações em todos os seus aspectos. Assim, cada autor reflete sobre o amor representado por um elemento: Arthur Aguiar escreve que “O amor é água”, dizendo que ele é fluido, mas por vezes gelado; ora tempestade, ora profundo. Fred Elboni explica que “O amor é ar”, mostrando a leveza de se amar sem sofrer, da brisa que envolve os apaixonados, mas que por vezes torna-se furacão. Ique Carvalho se debruça sobre quando “O amor é fogo”, que arde, aquece a alma, mas que também pode incendiar até doer. E Matheus Rocha conta que “O amor é terra”, estável, tranquilo, mas que não escapa dos terremotos da vida, que tiram tudo do lugar para que a rotina não o extermine. Um livro apaixonante, para quem ama e para quem quer amar um dia... e sempre. 
+- O Amor É Água
+Arthur Aguiar escreve sobre o amor quando ele é como a água: pode ser agradavelmente quente ou ferir se ficar gelado e rígido. Por vezes é tempestade, por vezes, calmaria. Mas quando é fluido, torna-se profundo e amolda-se a tudo.
+- O Amor É Ar
+Frederico Elboni fala sobre o amor ar, aquele que é leve, que eleva, faz flutuar. Mostra como é amar sem peso, sem amarras. Mesmo quando vem um vendaval, logo volta a ser a brisa, envolvendo os apaixonados com carinho e cuidado. 
+- O Amor É Fogo
+Ique Carvalho escreve sobre o amor quando ele é fogo, que arde, arrebata, aquece a alma, mas às vezes incendeia até doer. Pode se manter como brasa por muito tempo, aguardando a chance de ser chama de novo, ou até renascer das cinzas
+- O Amor É Terra
+Matheus Rocha fala sobre do amor do tipo terra, aquele estável, certo, que traz segurança, mas que pode, de vez em quando, provocar terremotos que abalam estruturas, tiram tudo do lugar e viram a rotina de ponta-cabeça. </p></span><br>
+</div>
+
+<div class='valor'>
+<span class='preco'><b>CARACTERISTICAS</b><br>
+Autor:<b>Elboni, Frederico / Carvalho, Ique  </b><br>
+Nº de páginas:<b>240</b><br>
+Editora:<b>Sextante / Gmt</b><br>
+Preço:</span><b class='real'>R$ 17,77</b>
+
+</div>
+<div id='dcalc'>
+<h2 class='tcom'>Comprar!</h2>
+
+<form name='calcula' id='ctot' action='teste' method='POST'>
+
+<div class='d2'>
+<span> Qtd.</span><br>
+<input type='number' id='qtd' onchange='calculaTotal()'>
+
+</div>
+
+<div class='d1'>
+<span class='ctot'> Total</span>
+<span class='xis'>
+<b>X</b>
+</span>
+<input type="text" id="totalCompra" value="17,77" readonly="readonly" />
+</div>
+</form>
+<button type="button" onclick="calculaTotal()">Calcular total</button>
+
+</div>
+</section>
+
+<<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>

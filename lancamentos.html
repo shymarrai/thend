@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "utf-8">
+	<link rel="icon" href="./_imagens/thend.png">
+	<link rel="stylesheet" href="_estilos/estiloindex.css">
+	<link rel="stylesheet" href="_estilos/estilonerd.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<script type='text/javascript' src='./_scripts/script.js'></script>
+	<script>
+     // Cria a função de cálculo do total da compra
+            function calculaTotal(){
+                        // Criação das variáveis que irão controlar o script
+var qtdComprar, total, precoLivro;
+                        // Atribui a qtdComprar, a quantidade de livros que o usuário deseja comprar
+qtdComprar = document.calcula.qtd.value;
+                        // Faz a conversão da string para um número inteiro
+qtdComprar = parseInt(qtdComprar);
+                        // Atribui o preço do livro à variável precoLivro
+precoLivro = 100.00;
+                        // Cálculo do total que será comprado
+total = qtdComprar * precoLivro;
+                        // Define 2 casas decimais para o valor armazenado na variável total
+total =  total.toFixed(2);
+
+                        // Atribui ao campo totalCompra o valor armazenado na variável total já formatado
+document.calcula.totalCompra.value = "R$ " + total;
+}
+</script>
+	<title> THEND - !Nerd </title>
+	</head>
+	
+<body id='bnerd'>
+<div id="interfacen">
+<h1 class="titulon"><a href='index.html'><span>!</span> N E R D </a> </h1>
+<header id="cabecalhon">
+<div id='barra'>
+<nav id="menunerd">
+
+<ul id='mnerd'>
+	<li><a href="acervo.html"> Acervo </a></li>
+	<li><a href="lancamentos.html"> !Nerd</a></li>
+	<li id='nc'><a href="contato.html"> Contate </a></li>
+</ul>
+</nav>
+</header>
+</div>
+</div>
+
+<section id="meio">
+
+
+<div id="blocbanner">
+
+<video id='vidban' autoplay loop>
+	<source src='_videos/banner.mp4' type="video/mp4">
+	<source src='_videos/banner1.ogv' type="video/ogg">
+	<source src='_videos/banner2.webm' type="video/webm">
+</video> 
+</div>
+
+<div id='cont'>
+<h2> Confira Já! </h2>
+<div class='bloc1'>
+
+<img src='./_imagens/lgo1.png' >
+<div>
+<a href='https://www.comic-con.org' target='_blank'>Go!</a>
+</div>
+</div>
+
+<div class='bloc2'>
+
+<img src='./_imagens/lego4.png'>
+<div>
+<a href='https://www.ccxp.com.br/' target='_blank'>Go!</a>
+</div>
+</div>
+
+<div class='bloc1'>
+
+<img src='./_imagens/lego3.jpg' >
+<div>
+<a href='http://www.ggrf.com.br/sobre.php' target='_blank'>Go!</a>
+</div>
+</div>
+
+<div class='bloc2'>
+
+
+<img src='./_imagens/lego5.png' >
+<div>
+<a href='http://www.gibiculturageek.com/' target='_blank'>Go!</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>

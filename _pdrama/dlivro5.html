@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "utf-8">
+	<link rel="icon" href="./_imagens/thend.png">
+	<link rel="stylesheet" href="../_estilos/estiloindex.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<title> THEND - Acervo - Confie em Mim - DRAMA </title>
+	<style>
+		div.valor{
+			margin-top: 132px;
+			padding-bottom: -90px;
+			height: 108px;
+		}
+	</style>
+	<script>
+     // Cria a função de cálculo do total da compra
+            function calculaTotal(){
+                        // Criação das variáveis que irão controlar o script
+var qtdComprar, total, precoLivro;
+                        // Atribui a qtdComprar, a quantidade de livros que o usuário deseja comprar
+qtdComprar = document.calcula.qtd.value;
+                        // Faz a conversão da string para um número inteiro
+qtdComprar = parseInt(qtdComprar);
+                        // Atribui o preço do livro à variável precoLivro
+precoLivro = 21.90;
+                        // Cálculo do total que será comprado
+total = qtdComprar * precoLivro;
+                        // Define 2 casas decimais para o valor armazenado na variável total
+total =  total.toFixed(2);
+
+                        // Atribui ao campo totalCompra o valor armazenado na variável total já formatado
+document.calcula.totalCompra.value = "R$ " + total;
+}
+</script>
+	</head>
+	
+<body>
+<div id="interface">
+<h1 class="titulo"><a href='../index.html'> TH<span>E</span>ND </a> </h1>
+<header id="cabecalho">
+
+<nav id="menu">
+
+<ul id='box'>
+	<li class='m' id='acer'><a href="../acervo.html"> Acervo </a>
+		<ul id='sub'
+		<br>
+		<li id='r'><a href="../_paginas/romance.html" >Romance</a></li><br>
+		<li id='f'><a href="../_paginas/ficcao.html" >Ficção</a></li><br>
+		<li id='h'><a href="../_paginas/hq.html" >HQ'S</a></li><br>
+		<li id='c'><a href="../_paginas/comedia.html" >Comédia</a></li><br>
+		<li id='d'><a href="../_paginas/drama.html" >Drama</a></li><br>
+		</ul>
+	</li>
+	<li class='m'><a href="../lancamentos.html"> !Nerd</a></li>
+	 
+	<li class='m' id='contat'><a href="../contato.html"> Contate-nos </a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+
+
+<section id="meio">
+
+
+<div id="conteudoprod">
+<h1 class='dra'>Confie em Mim - DRAMA </h1>
+<img class='poster 'src="../_imagens/cem.jpg">
+<br>
+<span id="livro"><p>'Harlan Coben é mestre em prender a atenção do leitor e criar histórias surpreendentes. Ele vai seduzir você na primeira página apenas para chocá-lo na última.' - Dan Brown, autor de O Código Da Vinci. Preocupados com o comportamento cada vez mais distante de seu ?lho Adam - principalmente depois do suicídio de seu melhor amigo, Spencer Hill -, o Dr. Mike Baye e sua esposa, Tia, decidem instalar um programa de monitoração no computador do garoto. Os primeiros relatórios não revelam nada importante. Porém, quando eles já começavam a se sentir mais tranqüilos, uma estranha mensagem muda completamente o rumo dos acontecimentos: 'Fica de bico calado que a gente se safa.' Perto dali, a mãe de Spencer, Betsy, encontra uma foto que levanta suspeitas sobre as circunstâncias da morte de seu ?lho. Ao contrário do que todos pensavam, ele não estava sozinho naquela noite fatídica. Teria sido mesmo suicídio? Para tornar o caso ainda mais estranho, Adam combina ir a um jogo com o pai, mas desaparece misteriosamente. Acreditando que o garoto está correndo grande perigo, Mike não medirá esforços para encontrá-lo.Quando duas mulheres são assassinadas, uma série de acontecimentos faz com que a vida de todas essas pessoas se cruzem de forma trágica, violenta e inesperada.</span><br><br>
+</div>
+
+<div class='valor'>
+<span class='preco'><b>CARACTERISTICAS</b><br>
+Autor:<b>COBEN ,HARLAN</b> <br>
+Nº de páginas:<b>320</b><br>
+Editora:<b>Arqueiro</b><br>
+Preço:</span><b class='real'>R$ 21,90 </b>
+</div>
+
+<div id="introducaosobre">
+
+
+</div>
+</div>
+
+<div id='dcalc'>
+<h2 class='tcom'>Comprar!</h2>
+
+<form name='calcula' id='ctot' action='teste' method='POST'>
+
+<div class='d2'>
+<span> Qtd.</span><br>
+<input type='number' id='qtd' onchange='calculaTotal()'>
+
+</div>
+
+<div class='d1'>
+<span class='ctot'> Total</span>
+<span class='xis'>
+<b>X</b>
+</span>
+<input type="text" id="totalCompra" value="R$ 21,90" readonly="readonly" />
+</div>
+</form>
+<button type="button" onclick="calculaTotal()">Calcular total</button>
+
+</div>
+
+</section>
+
+<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>

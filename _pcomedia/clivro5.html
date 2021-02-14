@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "utf-8">
+	<link rel="icon" href="../img/thend.png">
+	<link rel="stylesheet" href="../_estilos/estiloindex.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<title> THEND - Opúsculo - A Paródia - COMÉDIA </title>
+	<style>
+		div.valor{
+			margin-top: 35px;
+			padding-bottom: -90px;
+			height: 108px;
+			margin-left: 433px;
+		}
+		
+	</style>
+	<script>
+     // Cria a função de cálculo do total da compra
+            function calculaTotal(){
+                        // Criação das variáveis que irão controlar o script
+var qtdComprar, total, precoLivro;
+                        // Atribui a qtdComprar, a quantidade de livros que o usuário deseja comprar
+qtdComprar = document.calcula.qtd.value;
+                        // Faz a conversão da string para um número inteiro
+qtdComprar = parseInt(qtdComprar);
+                        // Atribui o preço do livro à variável precoLivro
+precoLivro = 19.90;
+                        // Cálculo do total que será comprado
+total = qtdComprar * precoLivro;
+                        // Define 2 casas decimais para o valor armazenado na variável total
+total =  total.toFixed(2);
+
+                        // Atribui ao campo totalCompra o valor armazenado na variável total já formatado
+document.calcula.totalCompra.value = "R$ " + total;
+}
+</script>
+	</head>
+	
+<body>
+<div id="interface">
+<h1 class="titulo"><a href='../index.html'> TH<span>E</span>ND </a> </h1>
+<header id="cabecalho">
+
+<nav id="menu">
+
+<ul id='box'>
+	<li class='m' id='acer'><a href="../acervo.html"> Acervo </a>
+		<ul id='sub'
+		<br>
+		<li id='r'><a href="../_paginas/romance.html" >Romance</a></li><br>
+		<li id='f'><a href="../_paginas/ficcao.html" >Ficção</a></li><br>
+		<li id='h'><a href="../_paginas/hq.html" >HQ'S</a></li><br>
+		<li id='c'><a href="../_paginas/comedia.html" >Comédia</a></li><br>
+		<li id='d'><a href="../_paginas/drama.html" >Drama</a></li><br>
+		</ul>
+	</li>
+	<li class='m'><a href="../lancamentos.html"> !Nerd</a></li>
+	 
+	<li class='m' id='contat'><a href="../contato.html"> Contate </a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+
+
+<section id="meio">
+
+
+<div id="conteudoprod">
+<h1 class='come'>Opúsculo - COMÉDIA </h1>
+<img class='poster 'src="../_imagens/op.png" >
+<br><br>
+<span id="livro"><p>“Sobre três coisas eu estava absolutamente certa. Primeira, Edwart talvez fosse, muito provavelmente, minha alma gêmea. Segunda, existia uma parte do vampiro dentro dele - que eu presumia que estivesse completamente fora de seu controle - que queria me ver morta. E terceira, eu incondicionalmente, irrevogavelmente, impenetravelmente, heterogeneamente e ginecologicamente desejava que ele tivesse me beijado.” 
+Você provavelmente já leu algo muito parecido com a declaração acima e pode estar pensando que se trata de um plágio, ou uma mera coincidência, mas não é nada disso. Ela resume a premissa do livro Opúsculo - a paródia, escrito pela revista de humor The Harvard Lampoon. 'Opúsculo' é uma hilariante paródia do Crepúsculo, de Stephenie Meyer, e conta a história de amor de Belle Goose e o misterioso e brilhante Edwart Mullen, Belle é uma garota pálida e desajeitada que chega a cidade de Switchblade, Oregon, buscando aventura, ou pelo menos um colega de classe imortal. Após testemunhar uma série de eventos estranhos - Edwart deixa suas batatas fritas intocadas no almoço! Edwart a salva de uma bola de neve voadora! - Belle tem uma dramática revelação: Edwart, um geek com interesse zero em garotas, é na verdade um vampiro, pelo qual ela está completamente apaixonada. Surge então o dilema: como ela poderia convencê-lo a mordê-la e assim transformá-la em sua noiva eterna, já que ele parece achar todas as garotas tão repulsivas? Cheio de romance, perigo, insuficiente proteção paternal, arrepiante comportamento de caçador compulsivo e com um baile de formatura de vampiro, Opúsculo é um conto tumultuado sobre uma garota obcecada por vampiros, que busca o amor em todos os lugares errados.</p></span>
+</div>
+
+<div class='valor'>
+<span class='preco'><b>CARACTERISTICAS</b><br>
+Autor:<b>Harvard, Lampoon</b> <br>
+Nº de páginas:<b>144</b><br>
+Editora:<b>Novo Século - SP</b><br>
+Preço:</span><b class='real'>R$ 19,90 </b>
+</div>
+
+<div id='dcalc'>
+<h2 class='tcom'>Comprar!</h2>
+
+<form name='calcula' id='ctot' action='teste' method='POST'>
+
+<div class='d2'>
+<span> Qtd.</span><br>
+<input type='number' id='qtd' onchange='calculaTotal()'>
+
+</div>
+
+<div class='d1'>
+<span class='ctot'> Total</span>
+<span class='xis'>
+<b>X</b>
+</span>
+<input type="text" id="totalCompra" value="R$ 19,90" readonly="readonly" />
+</div>
+</form>
+<button type="button" onclick="calculaTotal()">Calcular total</button>
+
+</div>
+
+</section>
+
+<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>

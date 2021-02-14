@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "utf-8">
+	<link rel="icon" href="./_imagens/thend.png">
+	<link rel="stylesheet" href="../_estilos/estiloindex.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<title> THEND - Acervo - Amor – ROMANCE </title>
+	
+		<style>
+		div.valor{
+			margin-top: 100px;
+			padding-bottom: -90px;
+			height: 108px;
+		
+		}
+	</style>
+	<script>
+     // Cria a função de cálculo do total da compra
+            function calculaTotal(){
+                        // Criação das variáveis que irão controlar o script
+var qtdComprar, total, precoLivro;
+                        // Atribui a qtdComprar, a quantidade de livros que o usuário deseja comprar
+qtdComprar = document.calcula.qtd.value;
+                        // Faz a conversão da string para um número inteiro
+qtdComprar = parseInt(qtdComprar);
+                        // Atribui o preço do livro à variável precoLivro
+precoLivro = 56.90;
+                        // Cálculo do total que será comprado
+total = qtdComprar * precoLivro;
+                        // Define 2 casas decimais para o valor armazenado na variável total
+total =  total.toFixed(2);
+
+                        // Atribui ao campo totalCompra o valor armazenado na variável total já formatado
+document.calcula.totalCompra.value = "R$ " + total;
+}
+</script>
+	</head>
+	
+<body>
+<div id="interface">
+<h1 class="titulo"><a href='../index.html'> TH<span>E</span>ND </a> </h1>
+<header id="cabecalho">
+
+<nav id="menu">
+
+<ul id='box'>
+	<li class='m' id='acer'><a href="../acervo.html"> Acervo </a>
+		<ul id='sub'
+		<br>
+		<li id='r'><a href="../_paginas/romance.html" >Romance</a></li><br>
+		<li id='f'><a href="../_paginas/ficcao.html" >Ficção</a></li><br>
+		<li id='h'><a href="../_paginas/hq.html" >HQ'S</a></li><br>
+		<li id='c'><a href="../_paginas/comedia.html" >Comédia</a></li><br>
+		<li id='d'><a href="../_paginas/drama.html" >Drama</a></li><br>
+		</ul>
+	</li>
+	<li class='m'><a href="../lancamentos.html"> !Nerd</a></li>
+	 
+	<li class='m' id='contat'><a href="../contato.html"> Contate </a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+<section id="meio">
+
+
+<div id="conteudoprod">
+<h1 class='roma'>Amor - ROMANCE </h1>
+<img class='poster' src="../_imagens/rlivro4.jpg">
+<br>
+<span id="livro"><p>O amor genuíno é incondicional? Altruísta? Inspirado pela beleza ou pela bondade? Necessariamente duradouro?Neste livro inovador e sem precedentes, o filósofo Simon May investiga essas e outras crenças arraigadas no nosso imaginário sobre o amor, revelando que elas são o produto de uma longa herança cultural e não correspondem à verdadeira natureza dessa emoção suprema. Com extensa e rigorosa pesquisa, o autor atravessa dois milênios e meio do pensamento ocidental para demonstrar que nosso ideal de amor se desenvolveu a partir de suas origens hebraicas e gregas, através do cristianismo. Até que nos últimos duzentos anos a ideia de que 'Deus é amor' foi invertida e se transformou em 'amor é Deus' - e assim tornou-se a única religião universal que o Ocidente ainda possui. May combina brilhantismo intelectual e domínio narrativo impecável para buscar os filósofos e escritores, tanto os céticos como os crentes no amor, que ousaram pensar de um modo diferente sobre o tema: da amizade perfeita de Aristóteles e da celebração hedonista de Ovídio aos conceitos de perda e luto em Freud, passando pela autenticidade pessoal de Rousseau, pela afirmação de Nietzsche e pelo tédio de Proust.</p></span><br><br>
+
+</div>
+
+<div class='valor'>
+<span class='preco'><b>CARACTERISTICAS</b><br>
+Autor:<b>May, Simon </b><br>
+Nº de páginas:<b>375</b><br>
+Editora:<b>Zahar</b><br>
+Preço:</span><b class='real'>R$ 56,90</b>
+
+</div>
+<div id='dcalc'>
+<h2 class='tcom'>Comprar!</h2>
+
+<form name='calcula' id='ctot' action='teste' method='POST'>
+
+<div class='d2'>
+<span> Qtd.</span><br>
+<input type='number' id='qtd' onchange='calculaTotal()'>
+
+</div>
+
+<div class='d1'>
+<span class='ctot'> Total</span>
+<span class='xis'>
+<b>X</b>
+</span>
+<input type="text" id="totalCompra" value="R$ 56,90" readonly="readonly" />
+</div>
+</form>
+<button type="button" onclick="calculaTotal()">Calcular total</button>
+
+</div>
+
+</section>
+
+<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>

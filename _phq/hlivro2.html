@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "utf-8">
+	<link rel="icon" href="./_imagens/thend.png">
+	<link rel="stylesheet" href="../_estilos/estiloindex.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<title> THEND - Arqueiro Verde - Máquina Mortífera - HQ </title>
+	<style>
+		div.valor{
+			margin-top: 236px;
+			padding-bottom: -90px;
+			height: 108px;
+		
+		}
+	</style>
+	<script>
+     // Cria a função de cálculo do total da compra
+            function calculaTotal(){
+                        // Criação das variáveis que irão controlar o script
+var qtdComprar, total, precoLivro;
+                        // Atribui a qtdComprar, a quantidade de livros que o usuário deseja comprar
+qtdComprar = document.calcula.qtd.value;
+                        // Faz a conversão da string para um número inteiro
+qtdComprar = parseInt(qtdComprar);
+                        // Atribui o preço do livro à variável precoLivro
+precoLivro = 25.50;
+                        // Cálculo do total que será comprado
+total = qtdComprar * precoLivro;
+                        // Define 2 casas decimais para o valor armazenado na variável total
+total =  total.toFixed(2);
+
+                        // Atribui ao campo totalCompra o valor armazenado na variável total já formatado
+document.calcula.totalCompra.value = "R$ " + total;
+}
+</script>
+	</head>
+	
+<body>
+<div id="interface">
+<h1 class="titulo"><a href='../index.html'> TH<span>E</span>ND </a> </h1>
+<header id="cabecalho">
+
+<nav id="menu">
+
+<ul id='box'>
+	<li class='m' id='acer'><a href="../acervo.html"> Acervo </a>
+		<ul id='sub'
+		<br>
+		<li id='r'><a href="../_paginas/romance.html" >Romance</a></li><br>
+		<li id='f'><a href="../_paginas/ficcao.html" >Ficção</a></li><br>
+		<li id='h'><a href="../_paginas/hq.html" >HQ'S</a></li><br>
+		<li id='c'><a href="../_paginas/comedia.html" >Comédia</a></li><br>
+		<li id='d'><a href="../_paginas/drama.html" >Drama</a></li><br>
+		</ul>
+	</li>
+	<li class='m'><a href="../lancamentos.html"> !Nerd</a></li>
+	 
+	<li class='m' id='contat'><a href="../contato.html"> Contate </a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+
+
+<section id="meio">
+
+
+<div id="conteudoprod">
+<h1 class='hq'>Arqueiro Verde - Máquina Mortífera - HQ </h1>
+<img class='poster'src="../_imagens/av.jpg">
+<br>
+<span id="livro"><p>A Batalha Pela Terra Continua! Oliver Queen achava que estava tudo em ordem. Como o heroico Arqueiro Verde, ele finalmente havia encontrado um propósito, amigos para ajudá-lo e até mesmo um lugar na poderosa Liga da Justiça da América. Mas, em um só momento, tudo mudou para sempre! Agora, Oliver está fugindo e sendo caçado pelo maior inimigo que já teve: Komodo, um misterioso arqueiro que o supera em todos os quesitos. Mas esse novo vilão é apenas uma peça do quebra-cabeça que é o passado do herói… um passado que envolve a origem de sua identidade heroica, o assassinato de seu pai e uma conspiração com séculos de existência. E se o Arqueiro Verde não se tornar o homem que precisa ser, não vai sobreviver o suficiente para descobrir sua importância nessa trama ancestral.</span><br><br>
+</div>
+
+<div class='valor'>
+<span class='preco'><b>CARACTERISTICAS</b><br>
+Autor:<b>Manapul, Francis </b> <br>
+Nº de páginas:<b>160</b><br>
+Editora:<b>Panini Comics</b><br>
+Preço:</span><b class='real'>R$ 25,50 </b>
+</div>
+
+<div id="introducaosobre">
+
+
+</div>
+</div>
+
+<div id='dcalc'>
+<h2 class='tcom'>Comprar!</h2>
+
+<form name='calcula' id='ctot' action='teste' method='POST'>
+
+<div class='d2'>
+<span> Qtd.</span><br>
+<input type='number' id='qtd' onchange='calculaTotal()'>
+
+</div>
+
+<div class='d1'>
+<span class='ctot'> Total</span>
+<span class='xis'>
+<b>X</b>
+</span>
+<input type="text" id="totalCompra" value="R$ 25,50" readonly="readonly" />
+</div>
+</form>
+<button type="button" onclick="calculaTotal()">Calcular total</button>
+
+</div>
+
+</section>
+
+<<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>

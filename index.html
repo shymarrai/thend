@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang=pt-br>
+	<head>
+	<meta charset= "UTF-8">
+	<link rel="icon" href="./_imagens/thend.png">
+	<link rel="stylesheet" href="_estilos/estiloindex.css">
+	<meta name="viewport" content="width= device-width, initial-scale=1">
+	<script type='text/javascript' src='./_scripts/script.js'></script>
+	
+	<title> THEND - Home </title>
+	</head>
+	
+<body onLoad='slide1()'>
+<div id="interface">
+<h1 class="titulo"><a href='index.html'> TH<span>E</span>ND </a> </h1> 
+<header id="cabecalho">
+<div id='saud'>
+
+
+
+</div>
+<nav id="menu">
+
+<ul id='box'>
+	<li class='m' id='acer'><a href="acervo.html"> Acervo </a>
+		<ul id='sub'
+		<br>
+		<li id='r'><a href="_paginas/romance.html" >Romance</a></li><br>
+		<li id='f'><a href="_paginas/ficcao.html" >Ficção</a></li><br>
+		<li id='h'><a href="_paginas/hq.html" >HQ'S</a></li><br>
+		<li id='c'><a href="_paginas/comedia.html" >Comédia</a></li><br>
+		<li id='d'><a href="_paginas/drama.html" >Drama</a></li><br>
+		</ul>
+	</li>
+	<li class='m'><a href="lancamentos.html">!Nerd</a></li>
+	  
+	<li class='m' id='contat'><a href="contato.html"> Contate </a></li>
+</ul>
+</nav>
+</header>
+</div>
+
+<section id="meio">
+
+<img id='imagem'>
+
+<div id="conteudoprod">
+<div id='saud'>
+<p>
+	<script language="javascript">
+
+// inicializa as variáveis de controle do cookie
+Value = "";
+Start = document.cookie.indexOf("");
+End = document.cookie.indexOf("end");
+Char = document.cookie.substring(Start,End);
+
+// Cria o objeto Date
+Now = new Date();
+
+/* Se a variável Char estiver vazia, significa que é o primeiro acesso do usuário e solicita a digitação do nome.
+Caso contrário, associa a variável Char o valor do cookie resgatado na linha 14. */
+if(Char==""){
+Value = prompt("Digite seu nome:","");
+}else{
+Value = Char;
+}
+
+// Enquanto a variável Value não for inicializada, solicita o nome do usuário
+while(Value==null||Value==""){
+Value = prompt("Digite seu nome:","");
+}
+
+// Determina o prazo de validade do cookie
+Now.setTime(Now.getTime()+(365*24*60*60*1000));
+
+// Define o fuso que será respeitado no controle do prazo do cookie
+document.cookie = ""+Value+"end "+Now+";expires="+Now.toGMTString();+"";
+
+// Exibe na tela a saudação ao usuário
+document.write("Bem Vindo ao site, "+Value+" !");
+	
+</script>
+</p>
+</div>
+</div>
+</section>
+
+<footer id="rodape">
+<div id='desin'>
+<img src='./_imagens/icod.png'><span>Bruno Gomes </span>
+</div>
+
+<div id='email'> <img src='./_imagens/icoe.png'><span> icestonebruno@gmail.com</span> 
+</div>
+
+
+
+<div id='lugar'> <img src='./_imagens/icol.png'><span> Riachuelo, Senac, Centro - RJ</span> 
+</div>
+
+<div id='telefone'> <img src='./_imagens/icot.png'><span> (21)96873-2665 </span> 
+</div>
+
+
+</footer>
+</body>
+</html>
